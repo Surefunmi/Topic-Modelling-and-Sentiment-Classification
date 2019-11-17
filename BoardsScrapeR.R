@@ -5,21 +5,19 @@ rm(list = ls(all.names = TRUE))
 #gc()
 
 #**********Installing and loading rvest package to parse HTML/XML files
-#install.packages("rvest")
+install.packages("rvest", dependencies = TRUE)
 library(rvest)
 
 #**********Installed and loaded tidyverse package for effective data manipulation 
-install.packages("tidyverse")
+#install.packages("tidyverse")
 library(tidyverse)
 
-
-
 #**********Includes map functions for manipulating vectors
-install.packages("purrr")
+#install.packages("purrr")
 library(purrr)
 
 #**********Works hand in hand with rvest**********
-install.packages("xml2")
+#install.packages("xml2")
 library(xml2)
 #install.packages("Rcrawler")
 #library(Rcrawler)
@@ -46,7 +44,8 @@ map_df(1:3, function(i){
 #to inspect the data in csv format
 write.csv(boards_data, file = "boardstest.csv")
 
-
+  
+            
 
 
 
